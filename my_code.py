@@ -30,32 +30,32 @@ def game():
             if tic_tac_toe[choice] == '':
                 tic_tac_toe[choice] = player1
                 make_board(tic_tac_toe)
-                if player1 == 'TL' and player1 == 'TM' and player1 == "TR":
+                if tic_tac_toe['TL'] and tic_tac_toe['TM'] and tic_tac_toe['TR']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'ML' and player1 == 'MM' and player1 == 'MR':
+                elif tic_tac_toe['ML'] and tic_tac_toe['MM'] and tic_tac_toe['MR']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'BL' and player1 == 'BM' and player1 == 'BR':
+                elif tic_tac_toe['BL'] and tic_tac_toe["BM"] and tic_tac_toe['BR']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'TL' and player1 == 'ML' and player1 == 'BL':
+                elif tic_tac_toe['TL'] and tic_tac_toe['ML'] and tic_tac_toe['BL']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'TM' and player1 == 'MM' and player1 == 'BM':
+                elif tic_tac_toe['TM'] and tic_tac_toe['MM'] and tic_tac_toe['BM']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'TR' and player1 == 'MR' and player1 == 'BR':
+                elif tic_tac_toe['TR'] and tic_tac_toe['MR'] and tic_tac_toe['BR']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'TR' and player1 == 'MM' and player1 == 'BL':
+                elif tic_tac_toe['TR'] and tic_tac_toe['MM'] and tic_tac_toe['BL']:
                     print("Good game! Player 1 wins!")
                     break
-                elif player1 == 'TL' and player1 == 'MM' and player1 == 'BR':
+                elif tic_tac_toe['TL'] and tic_tac_toe['MM'] and tic_tac_toe['BR']:
                     print("Good game! Player 1 wins!")
                     break
             else:
-                print("That spot is already filled. Try again.")
+                print("That spot is already filled. You lost your turn.")
         except:
             print("Thats not a spot")
 
@@ -64,32 +64,32 @@ def game():
             if tic_tac_toe[choice] == '':
                 tic_tac_toe[choice] = player2
                 make_board(tic_tac_toe)
-                if player2 == 'TL' and player2 == 'TM' and player2 == "TR":
+                if tic_tac_toe['TL'] and tic_tac_toe['TM'] and tic_tac_toe['TR']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'ML' and player2 == 'MM' and player2 == 'MR':
+                elif tic_tac_toe['ML'] and tic_tac_toe['MM'] and tic_tac_toe['MR']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'BL' and player2 == 'BM' and player2 == 'BR':
+                elif tic_tac_toe['BL'] and tic_tac_toe["BM"] and tic_tac_toe['BR']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'TL' and player2 == 'ML' and player2 == 'BL':
+                elif tic_tac_toe['TL'] and tic_tac_toe['ML'] and tic_tac_toe['BL']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'TM' and player2 == 'MM' and player2 == 'BM':
+                elif tic_tac_toe['TM'] and tic_tac_toe['MM'] and tic_tac_toe['BM']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'TR' and player2 == 'MR' and player2 == 'BR':
+                elif tic_tac_toe['TR'] and tic_tac_toe['MR'] and tic_tac_toe['BR']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'TR' and player2 == 'MM' and player2 == 'BL':
+                elif tic_tac_toe['TR'] and tic_tac_toe['MM'] and tic_tac_toe['BL']:
                     print("Good game! Player 2 wins!")
                     break
-                elif player2 == 'TL' and player2 == 'MM' and player2 == 'BR':
+                elif tic_tac_toe['TL'] and tic_tac_toe['MM'] and tic_tac_toe['BR']:
                     print("Good game! Player 2 wins!")
                     break
             else:
-                print("That spot is already filled. Try again.")
+                print("That spot is already filled. You lost your turn.")
         except:
             print("Thats not a spot")
         
