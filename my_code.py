@@ -2,17 +2,17 @@
 #  
 # A note on style: Dictionaries can be defined before or after functions.
 #Dictionary
-tic_tac_toe= {'TL': '', 'TM': '', 'TR': '',
-            'ML': '', 'MM': '', 'MR': '',
-            'BL': '', 'BM': '', 'BR': ''}
+tic_tac_toe= {'TL': ' ', 'TM': ' ', 'TR': ' ',
+            'ML': ' ', 'MM': ' ', 'MR': ' ',
+            'BL': ' ', 'BM': ' ', 'BR': ' '}
 #Tic tac toe board
 
 def make_board(tic_tac_toe):
-    print(tic_tac_toe['TL'] + '|' + tic_tac_toe['TM'] + '|' + tic_tac_toe['TR'])
-    print('-+-+-')
-    print(tic_tac_toe['ML'] + '|' + tic_tac_toe['MM'] + '|' + tic_tac_toe['MR'])
-    print('-+-+-')
-    print(tic_tac_toe['BL'] + '|' + tic_tac_toe['BM'] + '|' + tic_tac_toe['BR'])
+    print(tic_tac_toe['TL'] + ' |' + tic_tac_toe['TM'] + ' |' + tic_tac_toe['TR'])
+    print('--+--+--')
+    print(tic_tac_toe['ML'] + ' |' + tic_tac_toe['MM'] + ' |' + tic_tac_toe['MR'])
+    print('--+--+--')
+    print(tic_tac_toe['BL'] + ' |' + tic_tac_toe['BM'] + ' |' + tic_tac_toe['BR'])
 
 def game():
 
@@ -27,31 +27,31 @@ def game():
         
         try:
             choice = input("Your turn " + player1 + " where do you want to move? ")
-            if tic_tac_toe[choice] == '':
+            if tic_tac_toe[choice] == ' ':
                 tic_tac_toe[choice] = player1
                 make_board(tic_tac_toe)
-                if tic_tac_toe['TL'] and tic_tac_toe['TM'] and tic_tac_toe['TR']:
+                if tic_tac_toe['TL'] == tic_tac_toe['TM'] == tic_tac_toe['TR'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['ML'] and tic_tac_toe['MM'] and tic_tac_toe['MR']:
+                elif tic_tac_toe['ML'] == tic_tac_toe['MM'] == tic_tac_toe['MR'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['BL'] and tic_tac_toe["BM"] and tic_tac_toe['BR']:
+                elif tic_tac_toe['BL'] == tic_tac_toe["BM"] == tic_tac_toe['BR'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['TL'] and tic_tac_toe['ML'] and tic_tac_toe['BL']:
+                elif tic_tac_toe['TL'] == tic_tac_toe['ML'] == tic_tac_toe['BL'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['TM'] and tic_tac_toe['MM'] and tic_tac_toe['BM']:
+                elif tic_tac_toe['TM'] == tic_tac_toe['MM'] == tic_tac_toe['BM'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['TR'] and tic_tac_toe['MR'] and tic_tac_toe['BR']:
+                elif tic_tac_toe['TR'] == tic_tac_toe['MR'] == tic_tac_toe['BR'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['TR'] and tic_tac_toe['MM'] and tic_tac_toe['BL']:
+                elif tic_tac_toe['TR'] == tic_tac_toe['MM'] == tic_tac_toe['BL'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
-                elif tic_tac_toe['TL'] and tic_tac_toe['MM'] and tic_tac_toe['BR']:
+                elif tic_tac_toe['TL'] == tic_tac_toe['MM'] == tic_tac_toe['BR'] == 'X':
                     print("Good game! Player 1 wins!")
                     break
             else:
@@ -61,31 +61,31 @@ def game():
 
         try:
             choice = input("Your turn " + player2 + " where do you want to move? ")
-            if tic_tac_toe[choice] == '':
+            if tic_tac_toe[choice] == ' ':
                 tic_tac_toe[choice] = player2
                 make_board(tic_tac_toe)
-                if tic_tac_toe['TL'] and tic_tac_toe['TM'] and tic_tac_toe['TR']:
+                if tic_tac_toe['TL'] == tic_tac_toe['TM'] == tic_tac_toe['TR'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['ML'] and tic_tac_toe['MM'] and tic_tac_toe['MR']:
+                elif tic_tac_toe['ML'] == tic_tac_toe['MM'] == tic_tac_toe['MR'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['BL'] and tic_tac_toe["BM"] and tic_tac_toe['BR']:
+                elif tic_tac_toe['BL'] == tic_tac_toe["BM"] == tic_tac_toe['BR'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['TL'] and tic_tac_toe['ML'] and tic_tac_toe['BL']:
+                elif tic_tac_toe['TL'] == tic_tac_toe['ML'] == tic_tac_toe['BL'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['TM'] and tic_tac_toe['MM'] and tic_tac_toe['BM']:
+                elif tic_tac_toe['TM'] == tic_tac_toe['MM'] == tic_tac_toe['BM'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['TR'] and tic_tac_toe['MR'] and tic_tac_toe['BR']:
+                elif tic_tac_toe['TR'] == tic_tac_toe['MR'] == tic_tac_toe['BR'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['TR'] and tic_tac_toe['MM'] and tic_tac_toe['BL']:
+                elif tic_tac_toe['TR'] == tic_tac_toe['MM'] == tic_tac_toe['BL'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
-                elif tic_tac_toe['TL'] and tic_tac_toe['MM'] and tic_tac_toe['BR']:
+                elif tic_tac_toe['TL'] == tic_tac_toe['MM'] == tic_tac_toe['BR'] == 'O':
                     print("Good game! Player 2 wins!")
                     break
             else:
@@ -93,6 +93,6 @@ def game():
         except:
             print("Thats not a spot")
         
-print("I hope you enjoyed the game. Goodbye!")
+    print("I hope you enjoyed the game. Goodbye!")
 
 game()
